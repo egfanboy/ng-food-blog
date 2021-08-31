@@ -1,0 +1,15 @@
+.fb-post-list {
+  display: flex;
+  flex-direction: column;
+
+  .fb-list-count {
+    padding-right: 80px;
+    padding-top: 10px;
+    text-align: end;
+  }
+
+  .fb-list-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="fb-post-list">
+  <div class="fb-list-count">Post Count: {{numberOfPosts}}</div>
+  <div class="fb-list-content">
+    <fb-card
+      *ngFor="let post of posts"
+      [image]="post.image"
+      [title]="post.title"
+      [text]="getDate(post)"
+      (cardClicked)="handleCardClick(post)"
+    ></fb-card>
+  </div>
+</div>

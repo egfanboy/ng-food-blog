@@ -1,0 +1,36 @@
+.fb-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+  height: 400px;
+  margin: 40px;
+  box-sizing: border-box;
+  position: relative;
+
+  .fb-card-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .fb-card-title {
+  }
+  .fb-card-text {
+    color: rgb(168, 168, 168);
+  }
+
+  &:hover {
+    cursor: pointer;
+    // background-color: rgb(246, 195, 175);
+    .fb-card-link {
+      opacity: 1;
+    }
+  }
+
+  .fb-card-link {
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+  }
+}
